@@ -48,11 +48,11 @@ link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
 [[params.plugins.css]]
-link = "plugins/font-awesome/fontawesome.min.css"
+link = "plugins/font-awesome/css/fontawesome.min.css"
 [[params.plugins.css]]
-link = "plugins/font-awesome/brands.css"
+link = "plugins/font-awesome/css/brands.css"
 [[params.plugins.css]]
-link = "plugins/font-awesome/solid.css"
+link = "plugins/font-awesome/css/solid.css"
 
 # JS Plugins
 [[params.plugins.js]]
