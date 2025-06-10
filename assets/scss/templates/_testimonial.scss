@@ -5,7 +5,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  ul {
+    list-style-type: none;
+  }
   .counter-box {
     li {
       width: 50%;
@@ -73,6 +75,8 @@
       border: 0px;
     }
   }
+
+
 }
 
 .counter-box {
