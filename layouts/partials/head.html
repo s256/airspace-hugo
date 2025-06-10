@@ -177,7 +177,7 @@
 {{ with site.Params.plausible }}
 {{ if .enable }}
 {{ with .domain }}
-      {{ $scriptDomain := default "plausible.io" $.Params.plausible.script_domain }}
+      {{ $scriptDomain := default "plausible.io" site.Params.plausible.script_domain }}
       <script defer data-domain="{{ . }}" src="https://{{ $scriptDomain }}/js/plausible.js"></script>
 {{ end }}
 {{ end }}
