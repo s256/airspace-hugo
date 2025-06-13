@@ -42,6 +42,10 @@
 <meta name="baidu-site-verification" content="{{ . }}" />
 {{ end }}
 
+{{ with site.Params.keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+{{ end }}
+
 <!-- favicon -->
 {{ $favicon:= site.Params.favicon }}
 {{ if $favicon }}
