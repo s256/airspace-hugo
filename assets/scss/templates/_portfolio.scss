@@ -102,8 +102,8 @@
     }
 
     span {
-      color: lighten( $black, 51.3 );
-      width: 180px;
+      color: lighten($black, 51.3);
+      width: 130px;
       display: inline-block;
     }
 
@@ -115,7 +115,10 @@
     ul {
       li {
         margin-bottom: 10px;
+        list-style: none;
       }
+
+      padding-left: 0;
     }
   }
 }
