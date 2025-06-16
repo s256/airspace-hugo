@@ -208,3 +208,12 @@
     });
 </script>
 {{ end }}
+
+<script type="application/ld+json">
+   {
+     "@context" : "https://schema.org",
+     "@type" : "WebSite",
+     "name" : "{{.Title | default site.Title}}",
+     "url" : "{{ site.BaseURL }}"
+   }
+</script>
