@@ -1,3 +1,3 @@
 <a href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} {{ if strings.HasPrefix
-    .Destination "http" }} target="_blank" {{ else if strings.HasSuffix .Destination "pdf" }} target="_blank" data-rybbit-event="file_downloaded" {{ end
+    .Destination "http" }} target="_blank" {{ else if strings.HasSuffix .Destination "pdf" }} target="_blank" data-rybbit-event="file_downloaded" data-rybbit-prop-file="{{ .Destination | safeURL }}" {{ end
     }}>{{ .Text }}</a>
