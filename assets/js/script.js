@@ -104,10 +104,11 @@ $(document).ready(function () {
     let emailAddress = emailSpan.attributes.getNamedItem("data-user").value.split('').reverse().join('') + "@" + emailSpan.attributes.getNamedItem("data-domain").value.split('').reverse().join('');
     emailLink.href = "mailto:" + emailAddress;
     emailLink.innerText = emailAddress;
+    emailLink.setAttribute("data-rybbit-event", "email_clicked");
     emailSpan.parentElement.insertBefore(emailLink, emailSpan);
     emailSpan.parentElement.removeChild(emailSpan)
   }
 
-	// map initialize
-	$(map);
+  // map initialize
+  $(map);
 });
