@@ -180,9 +180,13 @@
 <!-- Plausible Analytics -->
 {{ with site.Params.plausible }}
 {{ if .enable }}
+{{ if .proxy }}
+<script defer data-domain="{{ site.BaseURL }}" src="/js/script.js"></script>
+{{ else }}
 {{ with .domain }}
-      {{ $scriptDomain := default "plausible.io" site.Params.plausible.script_domain }}
-      <script defer data-domain="{{ . }}" src="https://{{ $scriptDomain }}/js/plausible.js"></script>
+{{ $scriptDomain := default "plausible.io" site.Params.plausible.script_domain }}
+<script defer data-domain="{{ . }}" src="https://{{ $scriptDomain }}/js/plausible.js"></script>
+{{ end }}
 {{ end }}
 {{ end }}
 {{ end }}
